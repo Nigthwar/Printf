@@ -44,8 +44,10 @@ char	*ft_itoa(long n)
 	if (num == 0)
 		str[0] = '0';
 	if (num < 0)
+	{
 		str[0] = '-';
 		num = num * -1;
+	}
 	while (num > 0)
 	{
 		str[len] = (num % 10) + '0';
@@ -79,7 +81,9 @@ char	*ft_unsigitoa(unsigned int n)
 	if (!str)
 		return (0);
 	str[len--] = '\0';
-	if (n < 0)
+	if(n == 0)
+		str[0] = '0';
+	if (num < 0)
 		str[0] = '0';
 	if (num < 0)
 		str[0] = '-';
