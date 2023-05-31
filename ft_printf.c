@@ -6,11 +6,11 @@
 /*   By: cguerrei <cguerrei@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/22 17:02:51 by cguerrei          #+#    #+#             */
-/*   Updated: 2023/05/31 14:57:32 by cguerrei         ###   ########.fr       */
+/*   Updated: 2023/05/31 15:58:50 by cguerrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"s
+#include "ft_printf.h"
 
 int	ft_comprobador(va_list obj, const char str, int contador)
 {

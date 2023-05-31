@@ -6,11 +6,11 @@
 /*   By: cguerrei <cguerrei@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/22 17:04:54 by cguerrei          #+#    #+#             */
-/*   Updated: 2023/05/22 19:22:11 by cguerrei         ###   ########.fr       */
+/*   Updated: 2023/05/31 15:59:10 by cguerrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 //imprime un caracter dado por parametro
 int	ft_putchar(int a)
