@@ -6,7 +6,7 @@
 /*   By: cguerrei <cguerrei@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/22 17:03:50 by cguerrei          #+#    #+#             */
-/*   Updated: 2023/05/22 19:55:35 by cguerrei         ###   ########.fr       */
+/*   Updated: 2023/05/31 14:12:41 by cguerrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,8 +36,6 @@ char	*ft_itoa(long n)
 	num = n;
 	len = ft_counter(num);
 	str = (char *)malloc(sizeof(char) * (len + 1));
-	if (n > INT_MAX || n < INT_MIN)
-		return (0);
 	if (!str)
 		return (0);
 	str[len--] = '\0';
@@ -81,7 +79,7 @@ char	*ft_unsigitoa(unsigned int n)
 	if (!str)
 		return (0);
 	str[len--] = '\0';
-	if(n == 0)
+	if (n == 0)
 		str[0] = '0';
 	if (num < 0)
 		str[0] = '0';
@@ -100,8 +98,8 @@ char	*ft_unsigitoa(unsigned int n)
 int	ft_unsigputnbr(unsigned int nb)
 
 {
-	char	*str;
-	int		count;
+	char *str;
+	int count;
 
 	str = ft_unsigitoa(nb);
 	count = ft_putstr(str);
