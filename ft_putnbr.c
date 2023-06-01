@@ -6,7 +6,7 @@
 /*   By: cguerrei <cguerrei@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/22 17:03:50 by cguerrei          #+#    #+#             */
-/*   Updated: 2023/05/31 18:43:01 by cguerrei         ###   ########.fr       */
+/*   Updated: 2023/06/01 15:03:33 by cguerrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,12 +27,11 @@ static int	ft_counter(long x)
 	return (c);
 }
 
-static int	ft_unsigCounter(unsigned int n)
+static int	ft_unsigcounter(unsigned int n)
 {
 	int	num;
 
 	num = 0;
-
 	if (n == 0)
 	{
 		num++;
@@ -89,7 +88,7 @@ int	ft_unsigitoa(unsigned int n)
 	int	cnt;
 	int	aux;
 
-	cnt = ft_unsigCounter(n);
+	cnt = ft_unsigcounter(n);
 	if (n > 9)
 	{
 		ft_unsigitoa(n / 10);
@@ -101,14 +100,4 @@ int	ft_unsigitoa(unsigned int n)
 		write(1, &aux, 1);
 	}
 	return (cnt);
-}
-
-int	ft_unsigputnbr(unsigned int nb)
-
-{
-	int count;
-
-	count = ft_unsigitoa(nb);
-
-	return (count);
 }

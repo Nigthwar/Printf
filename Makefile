@@ -6,7 +6,7 @@
 #    By: cguerrei <cguerrei@student.42malaga.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/09 17:00:29 by cguerrei          #+#    #+#              #
-#    Updated: 2023/05/22 18:27:09 by cguerrei         ###   ########.fr        #
+#    Updated: 2023/06/01 15:00:36 by cguerrei         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ NAME = libftprintf.a
 
 LIB = ar rcs
 
-SRC = ft_printf.c ft_putstr.c ft_putnbr.c
+SRC = ft_printf.c ft_putstr.c ft_putnbr.c ft_unsignedint.c
 
 OBJ = $(SRC:.c=.o)
 
