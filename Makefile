@@ -6,7 +6,7 @@
 #    By: cguerrei <cguerrei@student.42malaga.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/09 17:00:29 by cguerrei          #+#    #+#              #
-#    Updated: 2023/06/01 15:00:36 by cguerrei         ###   ########.fr        #
+#    Updated: 2023/06/01 16:26:10 by cguerrei         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,3 +43,4 @@ comp:
 		$(CC) $(CFLAGS)
 
 .PHONY: all clean fclean re comp
+
