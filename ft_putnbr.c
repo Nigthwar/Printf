@@ -6,7 +6,7 @@
 /*   By: cguerrei <cguerrei@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/22 17:03:50 by cguerrei          #+#    #+#             */
-/*   Updated: 2023/06/01 16:25:15 by cguerrei         ###   ########.fr       */
+/*   Updated: 2023/06/06 14:55:01 by cguerrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,7 +83,7 @@ int	ft_putnbr(int n)
 	return (num);
 }
 
-int	ft_unsigitoa(unsigned int n)
+int	ft_unsignbr(unsigned int n)
 {
 	int	cnt;
 	int	aux;
@@ -91,8 +91,8 @@ int	ft_unsigitoa(unsigned int n)
 	cnt = ft_unsigcounter(n);
 	if (n > 9)
 	{
-		ft_unsigitoa(n / 10);
-		ft_unsigitoa(n % 10);
+		ft_unsignbr(n / 10);
+		ft_unsignbr(n % 10);
 	}
 	else
 	{

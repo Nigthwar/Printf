@@ -6,7 +6,7 @@
 /*   By: cguerrei <cguerrei@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/01 14:50:50 by cguerrei          #+#    #+#             */
-/*   Updated: 2023/06/01 16:24:40 by cguerrei         ###   ########.fr       */
+/*   Updated: 2023/06/06 14:56:12 by cguerrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	ft_unsigputnbr(unsigned int nb)
 {
 	int	count;
 
-	count = ft_unsigitoa(nb);
+	count = ft_unsignbr(nb);
 	return (count);
 }
 /*
